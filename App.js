@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-const port = 8080
 require('dotenv').config()
 const tools = require('./update')
 
@@ -43,9 +42,9 @@ mongoose.connect(process.env.DATABASE, { useNewUrlParser: true , useUnifiedTopol
         })
       })
 
-      app.listen(port, () => {
-        console.log(`App listening`)
-      })
+      app.listen(process.env.PORT || 3000, function(){
+        console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+      });
       
 })
 
