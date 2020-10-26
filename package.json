@@ -1,0 +1,27 @@
+{
+  "name": "scrape",
+  "version": "1.0.0",
+  "description": "scrape experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.5",
+    "node-cron": "^2.0.3",
+    "puppeteer": "^5.3.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
